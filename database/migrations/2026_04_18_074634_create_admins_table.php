@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->boolean('status')->default(1);
             $table->json('accessed_tabs')->nullable();
+            $table->json('removed_tabs')->nullable();
             $table->timestamps();
         });
     }
